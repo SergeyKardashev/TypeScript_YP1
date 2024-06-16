@@ -1,5 +1,6 @@
 # Compiled source #
 ###################
+dist
 *.com
 *.class
 *.dll

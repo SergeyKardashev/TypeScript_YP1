@@ -4,6 +4,9 @@
     "typescript": "^5.4.5"
   }, 
   "scripts": {
-    "start": "ts-node ./script.ts"
+    "start": "ts-node ./script.ts",
+    "build": "tsc",
+    "build:dev": "tsc src/index.ts --sourceMap",
+    "watch": "tsc src/index.ts --watch"
   }
 }
