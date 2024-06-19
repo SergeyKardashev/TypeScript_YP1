@@ -1,3 +1,5 @@
+import './style.css';
+
 import { myDog } from './dog/constants';
 
 console.log('Привет, меня зовут', myDog.name);
