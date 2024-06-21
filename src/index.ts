@@ -20,11 +20,13 @@ legs = legs + 1;
 
 console.log(legs);
 
+// Function Declaration. The simplest case
 function sumNumberOfLimbs(legs: number, arms: number): string {
   return `I have ${legs + arms} limbs`;
 }
 console.log('sumNumberOfLimbs and console say: ' + sumNumberOfLimbs(2, 2));
 
+// Function Declaration. Optional parameter
 function sayNumberOfLimbs(legs: number, arms?: number):void {
   if (arms == undefined) {
     console.log(`Say function says: I have ${legs} limbs`);
@@ -34,3 +36,10 @@ function sayNumberOfLimbs(legs: number, arms?: number):void {
 }
 sayNumberOfLimbs(2, 2);
 sayNumberOfLimbs(2);
+
+// Function Declaration. Union types
+function sayAge(age: string | number): void {
+  console.log(`I'm ${age}`);
+}
+sayAge(5);
+sayAge('five months');
