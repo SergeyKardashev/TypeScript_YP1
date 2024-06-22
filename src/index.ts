@@ -52,3 +52,21 @@ myParrotName = 'Yellow';
 // myParrotName = 'otherValue'; // error. 
 
 console.log('My parrot name: ' + myParrotName);
+
+// Type Aliases or just "types"
+
+type DigitalVariable = number;
+
+let myFavoriteNumber: DigitalVariable = 3;
+myFavoriteNumber = 42;
+myFavoriteNumber = 7.7;
+
+console.log(myFavoriteNumber);
+
+type BooleanOrFalsy = boolean | null | undefined | 0 | '';
+
+const isItHoliday: BooleanOrFalsy = undefined;
+
+console.log(isItHoliday);
+
+
