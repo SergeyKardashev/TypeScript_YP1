@@ -43,3 +43,12 @@ function sayAge(age: string | number): void {
 }
 sayAge(5);
 sayAge('five months');
+
+// Literal types - Predefined values
+
+let myParrotName: 'Yellow' | 'Eagle' | 'Firefly' = 'Firefly';
+
+myParrotName = 'Yellow';
+// myParrotName = 'otherValue'; // error. 
+
+console.log('My parrot name: ' + myParrotName);
