@@ -53,7 +53,7 @@ myParrotName = 'Yellow';
 
 console.log('My parrot name: ' + myParrotName);
 
-// Type Aliases or just "types"
+// Type Aliases or just "types" (named types)
 
 type DigitalVariable = number;
 
@@ -68,5 +68,20 @@ type BooleanOrFalsy = boolean | null | undefined | 0 | '';
 const isItHoliday: BooleanOrFalsy = undefined;
 
 console.log(isItHoliday);
+
+
+// Function Expression
+const triple = function (a: number): number {
+  return a * 3;
+};
+
+console.log('triple ' + triple(3));
+
+// Arrow Functions
+const double = (a: number): number => {
+  return a * 2;
+};
+
+console.log('double ' + double(3));
 
 
