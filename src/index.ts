@@ -85,3 +85,11 @@ const double = (a: number): number => {
 console.log('double ' + double(3));
 
 
+// Arrow Functions with type alias
+
+type CatNames = 'Fluffy' | 'Kitty' | 'Ginger';
+
+let myCatName: CatNames;
+myCatName = 'Kitty';
+myCatName = 'Ginger';
+console.log(myCatName);
